@@ -20,7 +20,7 @@
 **Summary of modules**
  - account -> website scraping with holehe
  - breached -> checking of breachs and leaks 
- - rep -> api scraping for found the reputation of the email target
+ - rep -> api scraping for found the reputation of the target email
  - possbile accounts -> check on snapchat & tiktok if a account exist with several formats of username
 
 
