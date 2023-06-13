@@ -17,7 +17,7 @@
  - menu in cli format (commands)
 
 
-**Summary of module**
+**Summary of modules**
  - account -> website scraping with holehe
  - breached -> checking of breachs and leaks 
  - rep -> api scraping for found the reputation of the email target
