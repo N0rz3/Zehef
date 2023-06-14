@@ -11,7 +11,7 @@
 ### Zehef is an osint tool which does not warn the target 😎
 
 
-**features of script**
+**Features of script**
  - only async
  - asynchrone scraping 
  - menu in cli format (commands)
