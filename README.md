@@ -64,11 +64,11 @@ option:
 ```
 
 
-**📚 Input example:**
+**📚 Example input:**
 
 ```python zehef.py example@example.com```
 
-**📚 Output example:**
+**📚 Example output:**
 
 ![example](https://github.com/N0rz3/N0rz3/assets/123885505/5c96bca6-8a5d-44af-aceb-2d0b671bf886)
 ![example2](https://github.com/N0rz3/N0rz3/assets/123885505/7b2848be-6cc2-4c5a-b55e-9052f6de363e)
