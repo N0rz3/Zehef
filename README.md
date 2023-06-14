@@ -88,7 +88,7 @@ option:
 
 
 
-## **😈 Holehe modules**
+## **😈 [Holehe](https://github.com/megadose/holehe) modules**
 | Name                | Domain                                 | Method            | Frequent Rate Limit |
 | ------------------- | -------------------------------------- | ----------------- | ------------------- |
 | aboutme             | about.me                               | register          | ✘               |
