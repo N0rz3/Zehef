@@ -25,6 +25,12 @@
 
 
 
+**🗃️ API**
+ Name                 | Function                                | Key          |
+| ------------------- | --------------------------------------  | ----------------- |
+| [emailrep.io](https://emailrep.io/)             | check the reputation of email                                |    ✖️🔑         |
+
+
 
 ## **🛠️ Requirements / Launch**
 
