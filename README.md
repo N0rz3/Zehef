@@ -1,6 +1,5 @@
 ![zehef](https://github.com/N0rz3/N0rz3/assets/123885505/461b9b47-a28b-4f52-891f-1c42ef2d92ac)
 
-![GitHub](https://img.shields.io/github/license/bellingcat/octosuite?style=flat)
 ![Python minimum version](https://img.shields.io/badge/Python-3.10%2B-brightgreen)
 
 
