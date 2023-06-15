@@ -6,7 +6,7 @@
 # **Zehef is a osint tool who studies the emails 📩**
 
 
-# **😇 About zehef**
+# **😇 Abouts zehef**
 ### Zehef is an osint tool which does not warn the target 😎
 
 
