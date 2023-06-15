@@ -18,7 +18,7 @@ async def parser():
         nargs="?",
         type=str,
         default=None,
-        help="Search information on target email with API(s), holehe, and others..."
+        help="Search information on target email with api, holehe, and others..."
     )
 
     args = parser.parse_args()
