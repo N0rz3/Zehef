@@ -34,7 +34,7 @@
 
 ## **🛠️ Requirements / Launch**
 
-- [Python 3]([https://www.python.org/downloads/release/python-370/](https://www.python.org/downloads/))
+- [Python 3](https://www.python.org/downloads/)
 
 ```
 git clone https://github.com/N0rz3/Zehef.git
