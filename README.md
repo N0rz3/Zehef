@@ -91,6 +91,7 @@ option:
 
 💻 Code by me 🤗
 
+If you like what i do, please subscribe 💖. And if you find this tool is useful don't forget to star 🌟
 
 
 
