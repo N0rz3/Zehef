@@ -37,6 +37,13 @@
 - [x] Snapchat
 
 
+### **💼 Workflow**
+
+
+
+![workflow_zehef](https://github.com/N0rz3/Zehef/assets/123885505/dfc2f11c-99c9-43b1-b1c8-8a6272fe2363)
+
+
 
 
 ## **🛠️ Requirements / Launch**
