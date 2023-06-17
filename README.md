@@ -32,6 +32,13 @@
 
 
 
+📒 Networks (possible accounts)
+- [x] TikTok
+- [x] Snapchat
+
+
+
+
 ## **🛠️ Requirements / Launch**
 
 - [Python 3](https://www.python.org/downloads/)
