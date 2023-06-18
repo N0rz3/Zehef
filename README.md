@@ -12,7 +12,7 @@
 
 
 **Features of script**
- - only async
+ - full async
  - asynchrone scraping 
  - menu in cli format (commands)
 
