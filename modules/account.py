@@ -65,10 +65,14 @@ async def check_email(email: str):
 
         await asyncio.gather(*tasks)
 
+    resultCount = 0
     if exist:
         for result in exist:
             try:
                 if result[0]['exists']:
                     print(f"[{GREEN}{date}{WHITE}] {GREEN}{result[0]['name'].upper()}{WHITE}")
+                    resultCount += 1
             except:
                 pass
+    if resultCount == 0:
+        print(f"{RED}[-]{WHITE} {RED}No related accounts were found!{WHITE}\n")
