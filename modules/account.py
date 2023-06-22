@@ -51,7 +51,10 @@ async def check_email(email: str):
 
     async def run_module(module, client):
         out = []
-        await module(email, client, out)
+        try:
+            await module(email, client, out)
+        except httpx.ConnectError:
+            pass
         exist.append(out)
 
     async with httpx.AsyncClient() as client:
