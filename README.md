@@ -84,8 +84,10 @@ option:
 
 **📚 Example output:**
 
-![example](https://github.com/N0rz3/N0rz3/assets/123885505/5c96bca6-8a5d-44af-aceb-2d0b671bf886)
-![example2](https://github.com/N0rz3/N0rz3/assets/123885505/7b2848be-6cc2-4c5a-b55e-9052f6de363e)
+![demo (1)](https://github.com/N0rz3/Zehef/assets/123885505/b275e7a1-659b-4463-9f30-f56c28959b5a)
+![demo (2)](https://github.com/N0rz3/Zehef/assets/123885505/54b0b6a8-07cf-4cd2-9a49-ad1598b05dc4)
+
+
 
 
 
