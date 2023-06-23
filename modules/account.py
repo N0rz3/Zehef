@@ -34,6 +34,16 @@ import httpx
 import datetime
 import asyncio
 
+"""
+patch n°1 (SSL certificate) (test n°1)
+"""
+
+import ssl # patch for luted against error SSL 
+ssl_context = ssl.create_default_context()
+ssl_context.options |= ssl.OP_NO_SSLv2
+ssl_context.options |= ssl.OP_NO_SSLv3
+ssl_context.options |= ssl.OP_NO_TLSv1
+ssl_context.options |= ssl.OP_NO_TLSv1_1
 
 async def check_email(email: str):
     """
@@ -57,7 +67,7 @@ async def check_email(email: str):
             pass
         exist.append(out)
 
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(verify=ssl_context) as client:
         tasks = []
         for module in [
             bitmoji, discord, instagram, pinterest, twitter, github, spotify, smule,
