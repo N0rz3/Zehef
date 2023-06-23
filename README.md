@@ -106,7 +106,7 @@ option:
 
 ### **📢 Credits**
 
-💻 Code by me 🤗
+💻 Code : mainly by me 🤗
 
 If you like what i do, please subscribe 💖. And if you find this tool is useful don't forget to star 🌟
 
