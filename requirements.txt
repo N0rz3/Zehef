@@ -3,3 +3,4 @@ holehe
 argparse
 datetime
 pwnedpasswords
+scrape-search-engine
