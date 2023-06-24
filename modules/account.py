@@ -63,7 +63,7 @@ async def check_email(email: str):
         out = []
         try:
             await module(email, client, out)
-        except httpx.ConnectError:
+        except (httpx.ConnectError, ssl.SSLError) as e:
             pass
         exist.append(out)
 
