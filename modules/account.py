@@ -35,7 +35,7 @@ import datetime
 import asyncio
 
 """
-patch n°1 (SSL certificate) (test n°1)
+patch n°2 (SSL certificate) (test n°2)
 """
 
 import ssl # patch for luted against error SSL 
