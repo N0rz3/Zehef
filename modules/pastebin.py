@@ -23,7 +23,7 @@ async def pastebin_check(i, email, result_links):
 async def pastebin_dump(email):
     search = ("site:pastebin.com \"{}\"".format(email))
     try:
-        googleText, googleLink = Google(search=search, userAgent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.96 Safari/537.36")
+        googleText, googleLink = Google(search=search, userAgent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36")
         scraping_msg = TempPrint("[+] 😴 Dumping...")
         scraping_msg.TPrint()
 
