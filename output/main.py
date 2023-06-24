@@ -1,5 +1,6 @@
 from modules import account, rep, breached, pastebin
 from lib.colors import *
+from lib.objects import *
 
 from modules.possible_accounts.social import snapchat, tiktok
 
@@ -10,9 +11,12 @@ from lib.utils import EMAIL_FORMAT
 async def zehef(email: str):
 
     if re.match(EMAIL_FORMAT, email):
-        print(f"{GREEN}[✔️] Email valid format!{WHITE}\n\n")
+        v = TempPrint(f"{GREEN}[✔️] Email valid format!{WHITE}")
+        v.TPrint()
+
     else:
-        print(f"{RED}[❌] Email not valid format!{WHITE}")
+        v = TempPrint(f"{RED}[❌] Email not valid format!{WHITE}")
+        v.TPrint
         exit()
 
     print(f"""{BLUE}🐙 Reputation{WHITE}\n""")
