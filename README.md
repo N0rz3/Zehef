@@ -87,6 +87,7 @@ option:
 
 ![demo (1)](https://github.com/N0rz3/Zehef/assets/123885505/b275e7a1-659b-4463-9f30-f56c28959b5a)
 ![demo (2)](https://github.com/N0rz3/Zehef/assets/123885505/54b0b6a8-07cf-4cd2-9a49-ad1598b05dc4)
+![demo (3)](https://github.com/N0rz3/Zehef/assets/123885505/56f88231-cd88-4fdf-acde-f376fae8c11f)
 
 
 
