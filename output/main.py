@@ -1,6 +1,8 @@
 from modules import account, rep, breached, pastebin
 from lib.colors import *
 from lib.objects import *
+from lib.emails_gen import gen
+from lib.name import *
 
 from modules.possible_accounts.social import snapchat, tiktok
 
@@ -36,3 +38,10 @@ async def zehef(email: str):
 
     print(f"""\n\n{BLUE}😈 Account Checker{WHITE}\n""")
     await account.check_email(email)
+
+    print(f"""\n\n\n{YELLOW}[?] 🔍 Generation of emails :{WHITE}\n""")
+    await gen(email)
+    print("\n")
+
+    print(f"""\n\n\n{YELLOW}[?] 🙋🏼‍♂️ Name search :{WHITE}\n""")
+    await find_name(email)
