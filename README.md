@@ -104,10 +104,6 @@ option:
 
 **This project is [License GPL v3](https://www.gnu.org/licenses/gpl-3.0.fr.html) be sure to follow all rules 👍**
 
-### **📢 Credits**
-
-💻 Code : mainly by me 🤗
-
 If you like what i do, please subscribe 💖. And if you find this tool is useful don't forget to star 🌟
 
 
