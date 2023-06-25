@@ -43,5 +43,5 @@ async def zehef(email: str):
     await gen(email)
     print("\n")
 
-    print(f"""\n\n\n{YELLOW}[?] 🤸🏻 Name search :{WHITE}\n""")
+    print(f"""\n{YELLOW}[?] 🤸🏻 Name search :{WHITE}\n""")
     await find_name(email)
