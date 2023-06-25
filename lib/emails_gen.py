@@ -57,11 +57,12 @@ async def gen(email: str):
             .replace("O", "0") + "@" + random.choice(email_domains)
         )
 
-        dedede = name.join("$$")
+        dedede = name + "$$" + "@" + random.choice(email_domains)
 
         r = name + "".join(random.choices(string.digits + string.digits + string.digits + string.digits + string.digits + string.digits + string.digits)) + "@" + random.choice(email_domains)
 
-        return upp, low, num, lett, a, no_num, ett, r
+
+        return upp, low, num, lett, a, no_num, ett, r, dedede
 
     var = variations()
 
