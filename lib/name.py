@@ -92,7 +92,9 @@ namess = {
     'neyox': 'neo',
     'track': 'tom',
     'trax': 'tom',
-    'fifi': 'philippe'
+    'fifi': 'philippe',
+    'phoebe': 'bee',
+    'brandon': 'brad'
 }
 
 
