@@ -98,10 +98,13 @@ namess = {
 
 async def find_name(email: str):
     username = email.split("@")[0]
+    founds = 0
 
     for fname, pseudo in namess.items():
         if username in pseudo:
+            founds += 1
             print("\n[+] Name found => " +  fname)
 
+    if founds == 0:
         print("\n[-] Name not found for this username.")
     
