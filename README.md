@@ -40,7 +40,8 @@
 ### **💼 Workflow**
 
 
-![workflow](https://github.com/N0rz3/Zehef/assets/123885505/26e24f44-24aa-42da-b88a-95c0c1a2c7dc)
+![zehef_workflow](https://github.com/N0rz3/Zehef/assets/123885505/1de80e29-dbf5-477e-a9c7-81fe90aebfed)
+
 
 
 
