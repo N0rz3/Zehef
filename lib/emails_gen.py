@@ -4,8 +4,9 @@ from .colors import *
 from .domains import email_domains
 
 async def gen(email: str):
-
-
+    """
+    Simple function to generate emails (just string object) with a list of domains, and username variations
+    """
     def decomp():
         name = email.split("@")[0]
         return name
