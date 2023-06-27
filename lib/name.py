@@ -94,7 +94,8 @@ namess = {
     'trax': 'tom',
     'fifi': 'philippe',
     'phoebe': 'bee',
-    'brandon': 'brad'
+    'brandon': 'brad',
+    'florian': 'flo'
 }
 
 
