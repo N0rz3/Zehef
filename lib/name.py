@@ -98,16 +98,19 @@ namess = {
     'florian': 'flo'
 }
 
+from .objects import *
 
 async def find_name(email: str):
     username = email.split("@")[0]
     founds = 0
+    attempts = 0
 
+    TempPrint(f"[+] 🐝 Search for a potential name...").TPrint()
     for fname, pseudo in namess.items():
+        attempts += 1
         if username in pseudo:
             founds += 1
             print("\n[+] Potential name found ~= " +  fname)
 
     if founds == 0:
         print("\n[-] Name not found for this username.")
-    
