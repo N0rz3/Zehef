@@ -106,7 +106,7 @@ async def find_name(email: str):
     for fname, pseudo in namess.items():
         if username in pseudo:
             founds += 1
-            print("\n[+] Name found => " +  fname)
+            print("\n[+] Potential name found ~= " +  fname)
 
     if founds == 0:
         print("\n[-] Name not found for this username.")
