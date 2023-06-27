@@ -105,7 +105,7 @@ async def find_name(email: str):
     founds = 0
     attempts = 0
 
-    TempPrint(f"[+] 🐝 Search for a potential name...").TPrint()
+    TempPrint(f"\n[+] 🐝 Search for a potential name...").TPrint()
     for fname, pseudo in namess.items():
         attempts += 1
         if username in pseudo:
