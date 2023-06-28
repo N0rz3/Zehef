@@ -112,11 +112,6 @@ option:
 ### **💖 Thanks**
 If you like what i do, please subscribe 💖. And if you find this tool is useful don't forget to star 🌟
 
-if you want to be part of the donations go to the .github folder and in FUNDING.yml and there will be my paypal
-thank you very much to those who will 💞
-
-more: donors will be mentioned in each project
-
 
 ## **😈 [Holehe](https://github.com/megadose/holehe) modules**
 | Name                | Domain                                 | Method            | Frequent Rate Limit |
