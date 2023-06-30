@@ -17,6 +17,9 @@ ________ ____ |  |__ \_____  \/ ____\\
 
       {YELLOW}😡 Zehef OSINT Tool{WHITE} 
                     
+🐦 Twitter: @norze15
+☕ Donations: https://www.buymeacoffee.com/norze
+
 """
 
 h2 = f"""
@@ -28,10 +31,12 @@ ________ ____ |  |__ \_____  \/ ____\\
 /_____ \\\___  >___|  /______  /__|      {CYAN}(BY 🦊 @N0rz3){RED}
       \/    \/     \/       \/       
 
-      {YELLOW}😡 Zehef OSINT Tool{WHITE} 
-              
-                   
+      {YELLOW}😡 Zehef OSINT Tool{WHITE}
 
+🐦 Twitter: @norze15
+☕ Donations: https://www.buymeacoffee.com/norze
+
+                   
 usage: zehef.py [-h] <email adress>
 
 option:
