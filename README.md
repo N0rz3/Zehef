@@ -73,6 +73,8 @@ ________ ____ |  |__ \_____  \/ ____\
 
       😡 Zehef OSINT Tool
 
+🐦 Twitter: @norze15
+☕ Donations: https://www.buymeacoffee.com/norze
 
 
 usage: zehef.py [-h] <email adress>
