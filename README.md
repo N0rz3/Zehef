@@ -41,7 +41,7 @@ thanks to Zehef, you can see if your personal or corporate email has leaked. You
 ### **💼 Workflow**
 
 
-![zehef_workflow](https://github.com/N0rz3/Zehef/assets/123885505/a543eda6-3a16-490f-9d3b-939a756713ca)
+![](assets/zehef_workflow.png)
 
 
 
