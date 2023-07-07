@@ -56,12 +56,12 @@ thanks to Zehef, you can see if your personal or corporate email has leaked. You
 ```
 git clone https://github.com/N0rz3/Zehef.git
 cd Zehef
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 
 ### **😲 Usage**
-```python zehef.py```
+```python3 zehef.py```
 ```
 v0.0.4
                __    ________  _____ 
@@ -86,7 +86,7 @@ option:
 
 **📚 Example input:**
 
-```python zehef.py example@example.com```
+```python3 zehef.py example@example.com```
 
 **📚 Example output:**
 
