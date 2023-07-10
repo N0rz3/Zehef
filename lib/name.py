@@ -99,18 +99,21 @@ namess = {
 }
 
 from .objects import *
+import re
 
 async def find_name(email: str):
-    username = email.split("@")[0]
+    emailUniqueId = str(email.split("@")[0])
+    # common delimeters for usernames
+    usernameList = re.split(r"\-|\_|\.", emailUniqueId)
     founds = 0
     attempts = 0
 
     TempPrint(f"\n[+] 🐝 Search for a potential name...").TPrint()
     for fname, pseudo in namess.items():
         attempts += 1
-        if username in pseudo:
+        if fname in usernameList or pseudo in usernameList:
             founds += 1
             print("\n[+] Potential name found ~= " +  fname)
 
     if founds == 0:
-        print("\n[-] Name not found for this username.")
+        print("\n[-] No potential names found in this email address.")
