@@ -53,6 +53,13 @@ thanks to Zehef, you can see if your personal or corporate email has leaked. You
 
 - [Python 3](https://www.python.org/downloads/)
 
+For Windows 💻:
+```
+git clone https://github.com/N0rz3/Zehef.git
+cd Zehef
+install.bat
+```
+
 For Linux 🐧 and others:
 ```
 git clone https://github.com/N0rz3/Zehef.git
@@ -60,12 +67,6 @@ cd Zehef
 pip3 install -r requirements.txt
 ```
 
-For Windows 💻:
-```
-git clone https://github.com/N0rz3/Zehef.git
-cd Zehef
-install.bat
-```
 
 ### **😲 Usage**
 ```python3 zehef.py``` / ```python zehef.py```
