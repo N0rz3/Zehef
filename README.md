@@ -12,7 +12,7 @@
 # **😇 Abouts zehef**
 ### Zehef is an osint tool which does not warn the target 😎
 
-thanks to Zehef, you can see if your personal or corporate email has leaked. You can also see in which most known sites the e-mail is registered and thus increase your security. (if you want to see all output of zehef scroll down 👇)
+thanks to Zehef, you can see if your personal or corporate email has leaked. You can also see in which most known sites the e-mail is registered and thus increase your security.
 
 **Features of script**
  - full async
