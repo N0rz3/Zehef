@@ -61,7 +61,7 @@ cd Zehef
 pip3 install -r requirements.txt
 ```
 
-### 👀 Wiki 
+### **👀 Wiki**
 -> **[Zehef Wiki](wiki/1-installation.md)**
 
 ## **🌞 More**
