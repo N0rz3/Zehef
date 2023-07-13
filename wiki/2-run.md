@@ -2,7 +2,7 @@
 
 ## 🏃 Run
 
-**Zehef is very simple to use, it only consists of 2 commands**
+**Zehef is very simple to use, it only consists of some commands**
 
 To simply launch zehef and see the launch usage and available commands
 
