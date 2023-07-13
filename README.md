@@ -1,3 +1,5 @@
+<h1 align="center" id="title">Z e h e f </h1><br>
+
 ![](assets/zehef.png)
 
 [![python version](https://img.shields.io/badge/Python-3.10%2B-brightgreen)](https://www.python.org/downloads/)
@@ -5,7 +7,7 @@
 
 
 # **Zehef is a osint tool who studies the emails 📩**
-
+![](assets/demo.png)
 
 # **😇 Abouts zehef**
 ### Zehef is an osint tool which does not warn the target 😎
@@ -53,58 +55,14 @@ thanks to Zehef, you can see if your personal or corporate email has leaked. You
 
 - [Python 3](https://www.python.org/downloads/)
 
-For Windows 💻:
-```
-git clone https://github.com/N0rz3/Zehef.git
-cd Zehef
-install.bat
-```
-
-For Linux 🐧 and others:
 ```
 git clone https://github.com/N0rz3/Zehef.git
 cd Zehef
 pip3 install -r requirements.txt
 ```
 
-
-### **😲 Usage**
-```python3 zehef.py``` / ```python zehef.py```
-```
-v0.0.4
-               __    ________  _____ 
-________ ____ |  |__ \_____  \/ ____\
-\___   // __ \|  |  \  _(__  <   __\ 
- /    /\  ___/|   Y  \/       \  |   
-/_____ \\___  >___|  /______  /__|      (BY 🦊 @N0rz3) 
-      \/    \/     \/       \/       
-
-      😡 Zehef OSINT Tool
-
-🐦 Twitter: @norze15
-☕ Donations: https://www.buymeacoffee.com/norze
-
-
-usage: zehef.py [-h] <email adress>
-
-option:
-    -h, --help          show this help message and exit
-```
-
-
-**📚 Example input:**
-
-```python3 zehef.py example@example.com``` / ```python zehef.py example@example.com```
-
-**📚 Example output:**
-
-![demo (1)](https://github.com/N0rz3/Zehef/assets/123885505/b275e7a1-659b-4463-9f30-f56c28959b5a)
-![demo (2)](https://github.com/N0rz3/Zehef/assets/123885505/54b0b6a8-07cf-4cd2-9a49-ad1598b05dc4)
-![demo (3)](https://github.com/N0rz3/Zehef/assets/123885505/56f88231-cd88-4fdf-acde-f376fae8c11f)
-
-
-
-
+### 👀 Wiki 
+-> **[Zehef Wiki](wiki/1-installation.md)**
 
 ## **🌞 More**
 
@@ -155,3 +113,4 @@ If you like what i do, please subscribe 💖. And if you find this tool is usefu
 | xnxx                | xnxx.com                               | register          | ✔               |
 | xvideos             | xvideos.com                            | register          | ✘               |
 | yahoo               | yahoo.com                              | login             | ✔               |
+
