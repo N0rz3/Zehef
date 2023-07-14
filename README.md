@@ -15,7 +15,7 @@
 thanks to Zehef, you can see if your personal or corporate email has leaked. You can also see in which most known sites the e-mail is registered and thus increase your security.
 
 **Features of script**
- - full async
+ - fully async
  - asynchrone scraping 
  - menu in cli format (commands)
 
