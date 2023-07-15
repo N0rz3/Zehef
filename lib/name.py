@@ -1,5 +1,5 @@
 namess = {
-    'john': 'johnny',
+    'johnny': 'john',
     'emily': 'emi',
     'michael': 'mike',
     'jessica': 'jess',
