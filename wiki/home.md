@@ -13,7 +13,6 @@ With a very simple use you will be able to discover a lot of information that ev
 
 Zehef can be used as an aid to investigations but also in terms of cyber security.
 
-Pay attention to the traces you leave on the web 😎.
 
 
 Have fun 💖!
