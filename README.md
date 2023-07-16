@@ -56,7 +56,7 @@ thanks to Zehef, you can see if your personal or corporate email has leaked. You
 - [Python 3](https://www.python.org/downloads/)
 
 ### **👀 Wiki**
--> **[Zehef Wiki](wiki/1-installation.md)**
+-> **[Zehef Wiki](wiki/home.md)**
 
 ## **🌞 More**
 
