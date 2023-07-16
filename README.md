@@ -55,12 +55,6 @@ thanks to Zehef, you can see if your personal or corporate email has leaked. You
 
 - [Python 3](https://www.python.org/downloads/)
 
-```
-git clone https://github.com/N0rz3/Zehef.git
-cd Zehef
-pip3 install -r requirements.txt
-```
-
 ### **👀 Wiki**
 -> **[Zehef Wiki](wiki/1-installation.md)**
 
