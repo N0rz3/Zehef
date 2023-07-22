@@ -14,7 +14,7 @@ For 🐧 Linux and others:
 ```
 $ python3 zehef.py
 ```
-![](https://github.com/N0rz3/Zehef/assets/123885505/34bb1e40-49cd-483e-a2c5-fa810b88ea17)
+![](https://github.com/N0rz3/Zehef/assets/123885505/660ecbd5-e6fb-41c6-8ba9-d62a277a27ba)
 
 
 
@@ -28,4 +28,4 @@ For 🐧 Linux and others:
 ```
 $ python3 zehef.py example@example.com
 ```
-![](https://github.com/N0rz3/Zehef/assets/123885505/b1db3364-67cc-4825-af37-dc984eec2c80)
+![](https://github.com/N0rz3/Zehef/assets/123885505/feea7364-97d0-4199-b151-86a5a4720b38)
