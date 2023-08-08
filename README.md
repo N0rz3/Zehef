@@ -48,9 +48,6 @@ thanks to Zehef, you can see if your personal or corporate email has leaked. You
 
 
 
-
-
-
 ## **🛠️ Requirements / Launch**
 
 - [Python 3](https://www.python.org/downloads/)
