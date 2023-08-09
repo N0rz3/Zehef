@@ -69,7 +69,7 @@ thanks to Zehef, you can see if your personal or corporate email has leaked. You
 
 
 ### **💖 Thanks**
-If you like what i do, please subscribe 💖. And if you find this tool is useful don't forget to star 🌟
+If you like what i do please subscribe 💖. And if you find this tool is useful don't forget to star 🌟
 
 **💶 Support me 👇**
 
