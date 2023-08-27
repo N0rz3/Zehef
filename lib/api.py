@@ -1,5 +1,5 @@
 """
 api used
 """
-def emailrep(email) -> None:
-    return "https://emailrep.io/{}".format(email)
+def reputation(email) -> None:
+    return "http://api.eva.pingutil.com/email?email={}".format(email)
