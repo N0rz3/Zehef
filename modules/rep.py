@@ -32,10 +32,5 @@ async def check_reputation(email: str):
         else:
             print(f"[{GREEN}{date}{WHITE}] {GREEN}No Spammer{WHITE}")
 
-        if js['data']['spam'] == True:
-            print(f"[{RED}{date}{WHITE}] {RED}Spammer{WHITE}")
-        else:
-            print(f"[{GREEN}{date}{WHITE}] {GREEN}No Spammer{WHITE}")
-
     except:
         print(f"[{date}] Error : Ratelimit, please change your ip.\n\n")
