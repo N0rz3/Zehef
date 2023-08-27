@@ -21,10 +21,10 @@ async def zehef(email: str):
         v.TPrint
         exit()
 
-    print(f"""{BLUE}🐙 Reputation{WHITE}\n""")
+    print(f"""{BLUE}📄 Infos{WHITE}\n""")
     await rep.check_reputation(email)
 
-    print(f"""{BLUE}🔎📂 Leak / Breach{WHITE}\n""")
+    print(f"""{BLUE}\n\n🔎📂 Leak / Breach{WHITE}\n""")
     await breached.check(email)
 
     print(f"""\n\n{BLUE}🕶️  Dump Pastebin{WHITE}\n""")
