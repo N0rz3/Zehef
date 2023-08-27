@@ -89,7 +89,7 @@ namess = {
     'victoria': 'vicky',
     'william': 'willie',
     'zachary': 'zac',
-    'neo': 'neyox',
+    'neo': 'neyoo',
     'tom': 'tomtrack',
     'tom': 'trax',
     'philippe': 'fifi',
