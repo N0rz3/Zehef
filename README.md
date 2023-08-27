@@ -23,7 +23,7 @@ thanks to Zehef, you can see if your personal or corporate email has leaked. You
 **Summary of modules**
  - account -> website scraping with holehe
  - breached -> checking of breachs and leaks 
- - rep -> api scraping for found the reputation of the target email
+ - info -> api scraping for found the infos of the target email
  - possbile accounts -> check on snapchat & tiktok if a account exist with several formats of username
  - pastebin -> check all links pastebin related to email
 
