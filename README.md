@@ -28,13 +28,6 @@ thanks to Zehef, you can see if your personal or corporate email has leaked. You
  - pastebin -> check all links pastebin related to email
 
 
-**🗃️ API**
- Name                 | Function                                | Key          |
-| ------------------- | --------------------------------------  | ----------------- |
-| [emailrep.io](https://emailrep.io/)             | check the reputation of email                                |    ✖️🔑         |
-
-
-
 📒 Networks (possible accounts)
 - [x] TikTok
 - [x] Snapchat
