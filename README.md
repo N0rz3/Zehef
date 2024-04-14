@@ -45,6 +45,7 @@ positional arguments:
 options:
   -h, --help  show this help message and exit
 ```
+![](assets/terminal.jpg)
 
 ### `$ python3 zehef.py email@domain.com `
 
