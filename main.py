@@ -1,11 +1,13 @@
-import sys, asyncio
+import sys
+from lib.cli import parser
+from lib.colors import *
 
-def version():
-    v = sys.version_info
-    if (v < (3, 10)):
-        print("[-] Zehef only works with Python 3.10+.")
-        exit("[+] Go install the most recent version of python -> https://www.python.org/downloads/")
+async def main():
+    py_version = sys.version_info
+    py_require = (3, 10)
 
-    from lib import CLI
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(CLI.parser())
+    if py_version >= py_require:
+        await parser()
+
+    else:
+        exit(f"{RED}>{WHITE} Zehef doesn't work with Python version lower at 3.10.")

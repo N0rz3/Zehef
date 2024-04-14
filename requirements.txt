@@ -1,7 +1,6 @@
-httpx==0.24.1
-holehe==1.61
-argparse==1.4.0
-datetime==5.1
-pwnedpasswords==2.0.0
-scrape-search-engine==0.2.2
-requests==2.31.0
+argparse
+httpx
+requests
+bs4
+pwnedpasswords
+asyncio

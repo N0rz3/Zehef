@@ -1,3 +1,5 @@
-if __name__ == "__main__":
+if __name__ == '__main__':
     import sys; sys.dont_write_bytecode = True
-    import main; main.version()
+    from lib.helpers import show_banner; show_banner()
+    import asyncio
+    from main import main; asyncio.run(main())
