@@ -1,0 +1,6 @@
+argparse
+httpx
+requests
+bs4
+pwnedpasswords
+asyncio
