@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Z e h e f</h1><br>
 
-![](assets/zehef.png)
+![](assets/zehef_logo.png)
 
 [![python version](https://img.shields.io/badge/Python-3.10%2B-brightgreen)](https://www.python.org/downloads/)
 [![license](https://img.shields.io/badge/License-GNU-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.fr.html)
