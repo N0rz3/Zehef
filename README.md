@@ -14,7 +14,7 @@
 ## 🌠 Features
 
 - Check if the email is in a paste ([Pastebin](https://fr.wikipedia.org/wiki/Pastebin.com))
-- Check if the email is pwned 
+- Find leaks with [HudsonRock](https://www.hudsonrock.com/)
 - Lists the sites to which the email address is connected (chess, deezer, duolingo, github, gravatar, instagram ...)
 - Generate email combinations
 
