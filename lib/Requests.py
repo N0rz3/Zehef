@@ -3,11 +3,12 @@ import requests
 
 
 class Request:
-    def __init__(self, url: str, headers=None, params=None, data=None):
+    def __init__(self, url: str, headers=None, params=None, data=None, json=None):
         self.url = url
         self.head = headers
         self.params = params
         self.data = data
+        self.json = json
 
     async def get(self):
         try:
@@ -24,7 +25,7 @@ class Request:
     async def post(self):
         try:
             async with httpx.AsyncClient() as client:
-                response = await client.post(url=self.url, data=self.data, headers=self.head, params=self.params)
+                response = await client.post(url=self.url, data=self.data, headers=self.head, params=self.params, json=self.json)
                 return response
         except httpx.HTTPError as e:
             print(f"HTTP error occurred: {e}")
