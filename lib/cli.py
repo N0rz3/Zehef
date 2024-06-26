@@ -2,6 +2,7 @@ import argparse
 import re
 from .colors import *
 from .update import Version_Checker
+from modules.accounts.adobe import adobe
 from modules.accounts.twitter import x
 from modules.accounts.gravatar import gravatar
 from modules.accounts.spotify import spotify
@@ -14,8 +15,10 @@ from modules.accounts.chess import chess
 from modules.accounts.deezer import deezer
 from modules.accounts.imgur import imgur
 from modules.accounts.instagram import instagram
+from modules.accounts.protonmail import protonmail
+from modules.accounts.flickr import flickr
 from modules.breaches.pastedumper import Pastebin_Dumper
-from modules.breaches.pwned import pwned
+from modules.breaches.hudsonrock import Cavalier
 from .emails_gen import Email_Gen
 
 async def parser():
@@ -39,31 +42,37 @@ async def parser():
         EMAIL_REGEX = '^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$'
 
         if re.match(EMAIL_REGEX, target):
-            print(f"\n{PURPLE}📁 Leaks{WHITE}\n")
 
-            pwned(target)
+            print(f"\n🔎 Currently researching on the email '{RED}{target}{WHITE}' {YELLOW}...{WHITE}\n")
 
-            print()
+            print(f"\n{PURPLE}📁 Leak search {YELLOW}...{WHITE}\n")
 
             await Pastebin_Dumper(target).paste_check()
 
-            print(f"\n{YELLOW}🎭 Accounts{WHITE}\n")
+            print()
+
+            await Cavalier(target).loader()
+
+            print(f"\n\n{GREEN}🎭 Account search {YELLOW}...{WHITE}\n")
             
+            await adobe(target)
             await chess(target)
             deezer(target)
             await duolingo(target)
+            await flickr(target)
             await github(target)
             await gravatar(target)
             imgur(target)
             await instagram(target)
             await pinterest(target)
+            await protonmail(target)
             pornhub(target)
             await spotify(target)
             await strava(target)
             await x(target)
             
 
-            print(f"\n{PINK}📧 Email generation{WHITE}\n")
+            print(f"\n\n{PINK}📧 Email generation{WHITE}\n")
             Email_Gen(target).printer()
 
         else:
