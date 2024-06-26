@@ -19,10 +19,6 @@
 - Generate email combinations
 
 
-### 🔎 Zehef Workflow
-![](assets/Zehef_workflow.png)
-
-
 ## **📦 Installation**
 
 - [Python 3.10+](https://www.python.org/downloads/)
