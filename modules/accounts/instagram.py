@@ -6,9 +6,12 @@ async def instagram(target: str):
     req = await Request("https://www.instagram.com/accounts/emailsignup/").get()
 
     # Step 2: Retrieve and Validate Cookies
-    csrf_token = req.cookies.get('csrftoken')
-    if not csrf_token:
-        raise KeyError('csrftoken not found in cookies')
+    try:
+        csrf_token = req.cookies.get('csrftoken')
+    except:
+        print(f"{RED}>{WHITE} Instagram / Csrftoken not found")
+        pass
+
 
     # Prepare data for the next request
     data = {
