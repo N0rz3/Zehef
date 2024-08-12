@@ -12,32 +12,38 @@ class Cavalier:
         response = await Request(self.api, headers={'api-key': 'ROCKHUDSONROCK'}, params={'email': self.email}).get()
 
         try:
-            data = response.json()['stealers'][0]
+            stealers_data = response.json().get('stealers', [])
 
-            print(f"[{RED}HudsonRock{WHITE}] Email's result :")
-            print("> Total service corporate :", data.get('total_corporate_services', '/'))
-            print("> Total user services :", data.get('total_user_services', '/'))
+            if stealers_data:
+                data = stealers_data[0]
 
-            time_iso = data.get('date_compromised')
+                print(f"[{RED}HudsonRock{WHITE}] Email's result :")
+                print("> Total service corporate :", data.get('total_corporate_services', '/'))
+                print("> Total user services :", data.get('total_user_services', '/'))
 
-            t_datetime = datetime.fromisoformat(time_iso.replace("Z", "+00:00"))
-            date = t_datetime.strftime("%Y-%m-%d %H:%M:%S")
+                time_iso = data.get('date_compromised')
 
-            print("> Date compromised :", date)
-            print("> Computer name :", data.get('computer_name', '/'))
-            print("> Operating system :", data.get('operating_system', '/'))
-            print("> Ip address :", data.get('ip', '/'))
+                t_datetime = datetime.fromisoformat(time_iso.replace("Z", "+00:00"))
+                date = t_datetime.strftime("%Y-%m-%d %H:%M:%S")
 
-            try:
-                top_passwords = data.get('top_passwords', [])
-                top_logins = data.get('top_logins', [])
+                print("> Date compromised :", date)
+                print("> Computer name :", data.get('computer_name', '/'))
+                print("> Operating system :", data.get('operating_system', '/'))
+                print("> Ip address :", data.get('ip', '/'))
 
-                print("> Top passwords :", ', '.join(top_passwords))
-                print("> Top logins :", ', '.join(top_logins))
+                try:
+                    top_passwords = data.get('top_passwords', [])
+                    top_logins = data.get('top_logins', [])
 
-            except:
-                print("> Top passwords : /")
-                print("> Top logins : /")
+                    print("> Top passwords :", ', '.join(top_passwords))
+                    print("> Top logins :", ', '.join(top_logins))
 
-        except(KeyError, json.JSONDecodeError):
-            print(f"[{RED}HudsonRock{WHITE}] Email Safe")
+                except KeyError:
+                    print("> Top passwords : /")
+                    print("> Top logins : /")
+
+            else:
+                print(f"[{RED}HudsonRock{WHITE}] Email Safe")
+
+        except (KeyError, json.JSONDecodeError):
+            print(f"[{RED}HudsonRock{WHITE}] Decode error")
