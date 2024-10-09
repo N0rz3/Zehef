@@ -8,7 +8,7 @@ async def github(target: str):
 
     try:
         if '"total_count": 0' in r.text:
-            pass
+            print(f"{RED}>{WHITE} Github")
 
         else:
             try:
@@ -39,7 +39,7 @@ async def github(target: str):
                 print(f"  └──> Account : {CYAN}https://github.com/{data['login']}/{WHITE}")
                 
             except:
-                pass
+                print(f"{RED}>{WHITE} Github")
     
     except:
         pass
