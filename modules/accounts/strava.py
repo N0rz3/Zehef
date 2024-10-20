@@ -3,7 +3,9 @@ from lib.colors import *
 
 async def strava(target: str):
 
-    req = await Request(f"https://www.strava.com/athletes/email_unique?email={target}").get()
+    params = {'email': target}
+
+    req = await Request(f"https://www.strava.com/frontend/athletes/email_unique", params=params).get()
 
     try:
         if "false" in req.text:
