@@ -1,8 +1,9 @@
-import argparse 
+import argparse
 import re
 from .colors import *
 from .update import Version_Checker
 from modules.accounts.adobe import adobe
+from modules.accounts.bandlab import bandlab
 from modules.accounts.twitter import x
 from modules.accounts.gravatar import gravatar
 from modules.accounts.spotify import spotify
@@ -39,7 +40,7 @@ async def parser():
     if args.email:
         target = args.email
 
-        EMAIL_REGEX = '^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$'
+        EMAIL_REGEX = r'[a-zA-Z0-9._+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}'
 
         if re.match(EMAIL_REGEX, target):
 
@@ -54,8 +55,9 @@ async def parser():
             await Cavalier(target).loader()
 
             print(f"\n\n{GREEN}🎭 Account search {YELLOW}...{WHITE}\n")
-            
+
             await adobe(target)
+            await bandlab(target)
             await chess(target)
             deezer(target)
             await duolingo(target)
