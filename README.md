@@ -15,7 +15,7 @@
 
 - Check if the email is in a paste ([Pastebin](https://fr.wikipedia.org/wiki/Pastebin.com))
 - Find leaks with [HudsonRock](https://www.hudsonrock.com/)
-- Lists the sites to which the email address is connected (chess, deezer, duolingo, github, gravatar, instagram ...)
+- Checking social media accounts (Instagram, Spotify, Deezer, Adobe, 𝕏 etc...)
 - Generate email combinations
 
 
