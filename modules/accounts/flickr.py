@@ -50,8 +50,10 @@ async def flickr(target: str):
                 print(f"  ├──> Id : {data['dbid']}")
                 print(f"  └──> Account : {CYAN}https://www.flickr.com/people/{data['nsid']}/{WHITE}")
 
+                break
+
             except:
-                pass
+                continue
 
     else:
         pass
