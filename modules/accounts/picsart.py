@@ -10,8 +10,6 @@ async def picsart(target: str):
 
     r = await Request("https://api.picsart.com/users/email/existence", params=params).get()
 
-    print(r.json())
-
     if r.json()['status'] == 'success':
         
         if r.json()['response']:
