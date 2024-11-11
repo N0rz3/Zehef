@@ -2,26 +2,9 @@ import argparse
 import re
 from .colors import *
 from .update import Version_Checker
-from modules.accounts.adobe import adobe
-from modules.accounts.bandlab import bandlab
-from modules.accounts.twitter import x
-from modules.accounts.picsart import picsart
-from modules.accounts.gravatar import gravatar
-from modules.accounts.spotify import spotify
-from modules.accounts.duolingo import duolingo
-from modules.accounts.pinterest import pinterest
-from modules.accounts.github import github
-from modules.accounts.strava import strava
-from modules.accounts.pornhub import pornhub
-from modules.accounts.chess import chess
-from modules.accounts.deezer import deezer
-from modules.accounts.imgur import imgur
-from modules.accounts.instagram import instagram
-from modules.accounts.protonmail import protonmail
-from modules.accounts.flickr import flickr
-from modules.breaches.pastedumper import Pastebin_Dumper
-from modules.breaches.hudsonrock import Cavalier
 from .emails_gen import Email_Gen
+from modules import *   
+
 
 async def parser():
     await Version_Checker.checker()
