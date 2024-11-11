@@ -33,33 +33,20 @@ class Email_Gen:
 
     def generate_email(self):
         random_domain = random.choice(self.domains)
-        name = self.e.split('@')[0]  
+        choice = lambda x: random.random() < x 
+        name = self.e.split('@')[0] 
+        special_char = random.choice(self.caract) if choice(0.3) else ''
+        random_number = random.randint(100, 999) if choice(0.2) else ''
 
-        if random.random() < 0.3:
-            special_char = random.choice(self.caract)
-        else:
-            special_char = ''
+        if choice(0.3):
+            name = re.sub(r'\d+', '', name) 
 
-        if random.random() < 0.2:
-            random_number = random.randint(100, 999)
-        else:
-            random_number = ''
-
-        if random.random() < 0.3:
-            name = str(name.lower()).replace('o', '0').replace('a', '4').replace('e', '3') 
-        else:
-            name = name
-
-        if random.random() < 0.3:
-            name = re.sub(r'\d+', '', name)
-        else:
-            name
-
-        if random.random() < 0.4:
+        if choice(0.4):
             name = name.replace('_', '').replace('.', '')
-        else:
-            name = name
 
+        if choice(0.3):
+            name = str(name.lower()).replace('o', '0').replace('a', '4').replace('e', '3') 
+        
         email = f"{name}{special_char}{random_number}@{random_domain}"
         return email
 
