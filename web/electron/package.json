@@ -1,0 +1,24 @@
+{
+  "name": "zehef-electron",
+  "version": "0.1.0",
+  "description": "Zehef Electron wrapper (starts FastAPI backend and opens the web UI)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.zehef.app",
+    "files": ["**/*"],
+    "directories": {
+      "output": "../../electron_dist"
+    },
+    "win": {
+      "target": ["nsis", "portable"]
+    }
+  }
+}

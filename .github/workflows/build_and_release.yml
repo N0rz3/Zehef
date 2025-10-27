@@ -1,0 +1,51 @@
+name: Build and release Electron app
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag for the release (e.g. v1.0.0)'
+        required: false
+
+jobs:
+  build-windows:
+    name: Build (Windows) and publish Release
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Ensure execution policy (powershell)
+        run: |
+          Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process -Force
+        shell: pwsh
+
+      - name: Install Python requirements
+        run: |
+          py -3 -m pip install --upgrade pip
+          py -3 -m pip install -r requirements.txt
+        shell: pwsh
+
+      - name: Build Electron distributable (includes backend exe)
+        run: |
+          pwsh -File .\build_electron.ps1
+        shell: pwsh
+
+      - name: Create GitHub Release and upload artifacts
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ github.event.inputs.tag || github.ref_name }}
+          files: electron_dist/**

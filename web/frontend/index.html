@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zehef Web UI</title>
+  <style>
+    /* Black theme + layered canvas background */
+    :root{
+      --bg:#000000;
+      --panel:#0b0b0b99;
+      --muted:#9aa0a6;
+      --accent:#ffffff;
+      --run-bg:#ffffff;
+      --run-fg:#000000;
+    }
+    html,body{height:100%;}
+    body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin: 0; background: var(--bg); color: var(--accent); overflow: hidden; }
+
+    /* full-screen canvas for the rain animation */
+    canvas#rain {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      z-index: 0; pointer-events: none; display:block;
+      background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.6));
+      transform: translateZ(0);
+    }
+
+    /* content sits above canvas */
+    .app-root{ position: relative; z-index: 5; height:100%; display:flex; flex-direction:column; }
+    header { background: transparent; color: var(--accent); padding: 14px 20px; display: flex; align-items: center; backdrop-filter: blur(6px) saturate(120%); }
+    header .brand { font-weight: 700; margin-right: auto; font-size:1.1rem; }
+    header .byline { opacity: 0.95; font-size:0.95rem; }
+
+    main { padding: 18px; flex: 1 1 auto; display:flex; flex-direction:column; }
+    .controls { display:flex; gap:10px; margin-bottom:14px; align-items:center; }
+    input[type="text"] { flex: 1; padding:10px; font-size:1rem; border-radius:6px; border:1px solid #222; background:#0b0b0b; color:var(--accent); }
+    button { padding:10px 14px; font-size:1rem; border-radius:6px; border:0; cursor:pointer; }
+    button:active{ transform: translateY(1px); }
+
+    /* White Run button */
+    button#run { background: var(--run-bg); color: var(--run-fg); box-shadow: 0 6px 18px rgba(255,255,255,0.04), inset 0 -2px 0 rgba(0,0,0,0.06); }
+    button#stop { background: transparent; color: var(--muted); border:1px solid rgba(255,255,255,0.04); }
+
+    /* log panel */
+    #log { flex: 1 1 auto; border-radius:8px; padding:12px; overflow:auto; white-space:pre-wrap; background: rgba(8,8,8,0.6); color:#eaeaea; box-shadow: 0 8px 30px rgba(0,0,0,0.6); }
+    .meta { font-size:0.9rem; color:var(--muted); margin-top:10px; }
+
+    /* small performance hints */
+    #log, input, button { will-change: transform, opacity; }
+  </style>
+</head>
+</body>
+  <canvas id="rain" aria-hidden="true"></canvas>
+  <div class="app-root">
+    <header>
+      <div class="brand">Zehef</div>
+      <div class="byline">made by mercy</div>
+    </header>
+    <main>
+      <div class="controls">
+        <input id="email" type="text" placeholder="email@domain.com" />
+        <button id="run">Run</button>
+        <button id="stop" disabled>Stop</button>
+      </div>
+      <div id="log"></div>
+      <div style="margin-top:8px" class="meta">Output streamed in real-time from the backend.</div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

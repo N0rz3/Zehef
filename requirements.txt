@@ -3,3 +3,5 @@ httpx
 requests
 bs4
 asyncio
+fastapi
+uvicorn[standard]
